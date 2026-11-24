@@ -1,0 +1,65 @@
+:root {
+    --azul: #1d4ed8;
+    --azul-escuro: #12338f;
+    --laranja: #ff7a1a;
+    --bs-body-font-family: "Roboto", system-ui, sans-serif;
+}
+
+body { background-color: #f4f6fc; }
+
+.navbar { background: var(--azul-escuro); border-bottom: 4px solid var(--laranja); }
+.navbar-brand { font-weight: 700; letter-spacing: .02em; }
+
+.carousel-item img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(10, 20, 60, .55);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    bottom: 3.25rem;
+}
+
+.titulo-secao { font-weight: 700; color: var(--azul-escuro); }
+.titulo-secao::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 5px;
+    margin-top: .5rem;
+    background: var(--laranja);
+    border-radius: 3px;
+}
+
+.card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(18, 51, 143, .1);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(18, 51, 143, .18);
+}
+
+.card-title { font-weight: 700; color: var(--azul-escuro); }
+
+.btn-laranja {
+    color: #fff;
+    background: var(--laranja);
+    border: 0;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.btn-laranja:hover { color: #fff; background: #e5640a; }
+
+footer { background: var(--azul-escuro); color: #fff; }
+
+@media (max-width: 575.98px) {
+    .carousel-item img { height: 260px; }
+    .carousel-caption { bottom: 2.75rem; padding: .5rem .75rem; }
+}
